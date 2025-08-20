@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import React from 'react';
-
 const AboutusSection = () => {
     const router = useRouter();
 
@@ -16,15 +15,14 @@ const AboutusSection = () => {
                 {/* Left Section */}
                 <div className="homepage-about-left-section">
                     <div className="homepage-about-left-section-text">
-                        <h1 className="homepage-about-left-section-header">About our organization</h1>
+                        <h1 className="homepage-about-left-section-header">Who we are </h1>
                         <p className="homepage-about-left-section-desc">
-                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi mollitia saepe expedita, optio repellendus non odio ut porro accusantium voluptate eos iste aliquid animi perspiciatis, reiciendis provident recusandae molestiae inventore!
-                            <b className='font-bold'>Lorem ipsumm organization</b>
-                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum temporibus laudantium fugit molestiae sapiente consectetur. Sit ipsam voluptatum repellendus tenetur provident. Quos ut eos ipsum doloremque culpa. Accusantium, veritatis possimus.
+                            We are a dedicated karate organization based in Shyamnagar, West Bengal, committed to promoting the true spirit of martial arts across India. Our primary goal is to support karate academies and instructors through official affiliations that provide recognition, structure, and growth opportunities. With a strong presence in West Bengal and expanding reach across the country, we ensure that every affiliated academy follows a disciplined training system, standardized examinations, and certified ranking procedures.
+                            Beyond certifications, we create opportunities for academies and students to participate in state and national-level events, seminars, and workshops. Through our guidance and support, affiliated academies gain credibility, access to professional resources, and a platform to showcase their talent.
                         </p>
                     </div>
                     <div>
-                        <button className="more-info-btn" onClick={handleAbout}>More Info</button>
+                        <button className="more-info-btn" onClick={handleAbout}>Learn more</button>
                     </div>
                 </div>
 

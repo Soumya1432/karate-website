@@ -70,11 +70,12 @@ body {
 
 .more-info-btn {
   padding: 12px 48px;
-  background-color: #fff;
+  background-color: #BE3030;
   border: 1px solid #ccc;
   color: var(--textLight);
   border-radius: 10px;
   font-weight: 700;
+  color: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }

@@ -4,7 +4,7 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const slides = [
   {
-    img: "/images/slide1.jpg",
+    img: "/images/slide2.jpg",
     title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     subtitle: "Lorem ipsum dolor sit amit",
   },
