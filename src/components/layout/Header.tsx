@@ -13,12 +13,14 @@ export default function Header() {
     { label: "About us", href: "#about" },
     { label: "Affiliations", href: "#affiliations" },
     { label: "Events & Tournaments", href: "#events" },
-    { label: "Member Academics", href: "#academics" },
+    { label: "Programs", href: "#academics" },
+    { label: "Gallery", href: "#gallery" },
+    { label: "Contact us", href: "#contact-us" },
   ];
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-white shadow">
-      <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div className="max-w-7xl mx-auto flex items-center justify-between lg:px-4 lg:py-6 px-4 py-4">
         
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -38,12 +40,18 @@ export default function Header() {
         </ul>
 
         {/* Contact Button */}
-        <div className="hidden md:block">
+        <div className="hidden md:block ">
+            <Link
+            href="#contact"
+            className=" text-black border px-4 py-2 rounded-lg hover:bg-gray-100 transition"
+          >
+            Register
+          </Link>
           <Link
             href="#contact"
-            className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition"
+            className="bg-red-600 text-white px-4 py-2 rounded-lg ml-4 hover:bg-red-700 transition"
           >
-            Contact us
+            Login
           </Link>
         </div>
 
@@ -82,13 +90,20 @@ export default function Header() {
               </a>
             </li>
           ))}
-          <li>
+          <li className="flex flex-col gap-4">
             <Link
               href="#contact"
               className="bg-red-600 text-white px-4 py-2 rounded-lg block text-center hover:bg-red-700 transition"
               onClick={toggleMenu}
             >
-              Contact us
+              Login
+            </Link>
+             <Link
+              href="#contact"
+              className="bg-red-600 text-white px-4 py-2 rounded-lg block text-center hover:bg-red-700 transition"
+              onClick={toggleMenu}
+            >
+              Register
             </Link>
           </li>
         </ul>

@@ -29,7 +29,7 @@ const AboutusSection = () => {
                 {/* Right Section */}
                 <div className="homepage-about-right-section">
                     <Image
-                        src="/images/slide1.jpg"
+                        src="/images/homeAbout.jpg"
                         alt="image-01"
                         width={800}
                         height={800}
