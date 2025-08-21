@@ -9,7 +9,7 @@
 
 
 
-/* Tablets & Below (≤1024px) */
+/* header start*/
 @media (max-width: 1024px) {
     .header-wrapper {
         margin: 0 auto;
@@ -29,7 +29,6 @@
     }
 }
 
-/* Tablets Portrait (≤768px) */
 @media (max-width: 768px) {
      .header-wrapper {
         margin: 0 auto;
@@ -67,7 +66,6 @@
     }
 }
 
-/* Mobile Phones (≤480px) */
 @media (max-width: 480px) {
     .header-wrapper {
         margin: 0 auto;
@@ -103,6 +101,70 @@
         font-size: 13px;
     }
 }
+
+/* header end */
+
+
+
+
+/* hero section start */
+@media(max-width:1024px) {
+    .hero-container {
+        height: fit-content;
+    }
+
+    .hero-content p {
+        font-size: 32px;
+        font-family: var(--text-font);
+    }
+}
+
+@media(max-width:768px) {
+    .hero-container {
+        height: fit-content;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        font-family: var(--text-font);
+
+    }
+
+    .hero-content p {
+        font-size: 24px;
+        text-wrap: wrap;
+        font-family: var(--text-font);
+    }
+
+    .hero-content button {
+        border-radius: 10px;
+
+    }
+
+}
+
+@media(max-width:480px) {
+    .hero-container {
+        height: fit-content;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+        font-family: var(--text-font);
+    }
+
+    .hero-content p {
+        font-size: 16px;
+        font-family: var(--text-font);
+    }
+
+    .hero-content button {
+        border-radius: 10px;
+
+    }
+}
+
+/* hero section end */
 
 
 
@@ -263,3 +325,37 @@
 }
 
 /* homepageabout section end */
+
+
+
+/* homepage banner start */
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .homepage-banner-content {
+    flex-direction: row;
+  }
+    .homepage-banner-title {
+    font-size: 2.25rem; /* 4xl */
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+/* homepage banner end */
+
+
+/* affiliation section start */
+@media (min-width: 640px) {
+  .affiliation-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .affiliation-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* affiliation card end */

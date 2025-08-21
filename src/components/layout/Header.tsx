@@ -9,8 +9,8 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "About us", href: "#about" },
+    { label: "Home", href: "/" },
+    { label: "About us", href: "about-us" },
     { label: "Affiliations", href: "#affiliations" },
     { label: "Events & Tournaments", href: "#events" },
     { label: "Programs", href: "#academics" },

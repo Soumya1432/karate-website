@@ -1,62 +1,70 @@
-import React from 'react'
-import AffiliationCard from '../card/AfffiliationCard';
-import { BsPercent, BsPuzzle } from 'react-icons/bs';
-import { RiMvAiLine } from 'react-icons/ri';
-import { BiAward } from 'react-icons/bi';
+import React from "react";
+import { BsPercent, BsPuzzle } from "react-icons/bs";
+import { RiMvAiLine } from "react-icons/ri";
+import { BiAward } from "react-icons/bi";
+import AffiliationCard from "../card/AfffiliationCard";
 
 const AffiliationsBenefit = () => {
     return (
-        <section
-            className=" max-w-screen-full mx-auto py-6"
-        >
-            <div className='relative w-full flex items-center justify-center text-white py-32'
+        <section className="home-page-affiliation-benefit-container">
+            <div
+                className="affiliation-hero"
                 style={{
-                    backgroundImage: "url('/images/affiliationBg.jpg')", // replace with your bg image path
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
+                    backgroundImage: "url('/images/affiliationBg.jpg')",
                 }}
             >
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-r from-red-800/70 to-black/50"></div>
+                {/* Overlay */}
+                <div className="affiliation-overlay"></div>
 
                 {/* Content */}
-                <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        Affiliation Benefits
-                    </h2>
-                    <p className="text-lg md:text-xl text-gray-200 mb-10">
+                <div className="affiliation-content">
+                    <h2>Affiliation Benefits</h2>
+                    <p>
                         Your path to official recognition and nationwide opportunities
                     </p>
 
-                    {/* Cards Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    {/* Cards */}
+                    <div className="affiliation-cards-grid">
                         <AffiliationCard
-                            icon={<BsPuzzle />}
+                            icon= {<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36 66.0003C52.5686 66.0003 66 52.5689 66 36.0003C66 19.4318 52.5686 6.00037 36 6.00037C19.4314 6.00037 6 19.4318 6 36.0003C6 52.5689 19.4314 66.0003 36 66.0003Z" stroke="white" strokeWidth="2" />
+                                <path d="M9 46.4784C12.9479 48.0615 15.7899 48.0615 17.5258 46.4784C20.1298 44.1037 17.8829 36.8967 21.5298 34.909C25.1766 32.9214 30.7329 41.7321 35.9262 38.833C41.1193 35.9338 35.4369 28.2034 39.0408 25.0695C42.6447 21.9355 47.331 25.47 48.1502 20.2297C48.9693 14.9896 44.3282 17.2623 43.4376 12.3104C42.8438 9.00916 42.8438 7.27326 43.4376 7.10266" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                                <path d="M43.5314 65.0258C40.7202 62.1488 39.7082 59.4746 40.4954 57.0029C41.6762 53.2955 43.6239 53.5146 44.4732 51.2223C45.3224 48.9299 42.9234 45.665 48.2465 42.8739C51.7952 41.0132 56.6745 43.1691 62.8842 49.3416" stroke="white" strokeWidth="2" strokeLinecap="round" />
+                            </svg>
+                            }
                             title="National Recognition"
                             description="Be officially recognized across India"
                         />
                         <AffiliationCard
-                            icon={<RiMvAiLine />}
+                            icon={<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.5 39.9C36.9 38.4 36.9 37.2 37.2 36H9V13.5L27 25.5L45 13.5V18.6C46.8 17.7 48.3 17.7 49.2 17.7C49.5 17.4 50.1 17.1 50.7 16.8V7.8C51 5.1 48.9 3 46.2 3H7.8C5.1 3 3 5.1 3 7.8V37.2C3 39.9 5.1 42 7.8 42H38.7C38.1 41.4 37.8 40.8 37.5 39.9ZM45 9L27 21L9 9H45ZM67.8 29.7C67.2 27.9 65.7 27.6 64.8 26.7C64.2 25.8 64.2 24 62.7 23.1C61.2 21.9 59.7 22.5 58.5 22.2C57.3 21.9 56.4 20.4 54.6 20.4C52.8 20.4 51.9 21.6 50.7 22.2C49.5 22.5 48 21.9 46.5 23.1C45 24 45.3 25.5 44.4 26.7C43.5 27.6 42 28.2 41.4 29.7C40.8 31.5 42 32.7 42 33.9C42 35.1 40.8 36.3 41.4 38.1C42 39.9 43.5 40.2 44.4 41.1C45 42 45 43.8 46.5 44.7C48 45.9 49.5 45.3 50.7 45.6C51.9 45.9 52.8 47.4 54.6 47.4C56.4 47.4 57.3 46.2 58.5 45.6C59.7 45.3 61.2 45.9 62.7 44.7C64.2 43.5 64.2 42 64.8 41.1C65.7 40.2 67.2 39.6 67.8 38.1C68.4 36.3 67.2 35.1 67.2 33.9C67.2 32.7 68.4 31.5 67.8 29.7ZM54.6 43.2C49.5 43.2 45.6 39 45.6 34.2C45.6 29.4 49.8 25.2 54.6 25.2C59.4 25.2 63.6 29.4 63.6 34.2C63.6 39 59.7 43.2 54.6 43.2ZM59.1 33.9C59.1 36.3 57 38.4 54.6 38.4C52.2 38.4 50.1 36.3 50.1 33.9C50.1 31.5 52.2 29.4 54.6 29.4C57 29.4 59.1 31.5 59.1 33.9ZM58.5 51.3L57 59.4L55.2 68.7L49.2 63L42 66.3L45 49.2C46.2 49.8 47.7 50.1 49.2 50.1C50.1 50.7 51.3 51.3 52.2 51.6C52.8 51.9 53.7 51.9 54.6 51.9C56.1 52.2 57.3 51.9 58.5 51.3ZM68.1 58.5L62.1 56.4L63.3 49.8L65.1 48.9L65.4 48.6L68.1 58.5Z" fill="white" />
+                            </svg>
+                            }
                             title="Official Recognition"
                             description="Gain credibility with certified affiliations"
                         />
                         <AffiliationCard
-                            icon={<BiAward />}
+                            icon= {<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.71 41.817L4.18499 51.015C3.65123 51.3915 3.20645 51.8803 2.88196 52.4472C2.55747 53.014 2.36115 53.6451 2.30682 54.296C2.25248 54.9469 2.34145 55.6018 2.56746 56.2146C2.79347 56.8274 3.15103 57.3833 3.61499 57.843L14.073 68.298C14.5238 68.7915 15.0798 69.1774 15.6998 69.4272C16.3198 69.677 16.988 69.7842 17.655 69.741C18.3221 69.6978 18.9709 69.5053 19.5535 69.1776C20.1361 68.85 20.6376 68.3956 21.021 67.848L30.339 55.326M55.26 30.252L67.812 21.057C68.3471 20.6812 68.7932 20.1925 69.1186 19.6254C69.4441 19.0582 69.6409 18.4265 69.6953 17.7749C69.7497 17.1233 69.6602 16.4676 69.4333 15.8544C69.2063 15.2412 68.8475 14.6853 68.382 14.226L57.93 3.65101C57.4704 3.16423 56.9073 2.78705 56.2822 2.54737C55.6572 2.3077 54.9862 2.21168 54.319 2.26641C53.6518 2.32115 53.0055 2.52524 52.4279 2.86358C51.8502 3.20192 51.3561 3.66584 50.982 4.221L41.781 16.74M37.17 47.208L51.726 69.738L54.723 54.756L69.702 51.762L47.172 37.203" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                <path d="M24.765 36.036C24.765 39.0157 25.9487 41.8734 28.0557 43.9804C30.1626 46.0873 33.0203 47.271 36 47.271C38.9797 47.271 41.8374 46.0873 43.9444 43.9804C46.0513 41.8734 47.235 39.0157 47.235 36.036C47.235 33.0563 46.0513 30.1987 43.9444 28.0917C41.8374 25.9847 38.9797 24.801 36 24.801C33.0203 24.801 30.1626 25.9847 28.0557 28.0917C25.9487 30.1987 24.765 33.0563 24.765 36.036Z" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            }
                             title="Certifications Benefits"
                             description="Standardized & certified Instructor"
                         />
                         <AffiliationCard
-                            icon={<BsPercent />}
+                            icon={<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M43.848 9.32397L35.181 4.12646L26.514 9.32397L16.4475 10.215L12.4875 19.512L4.86902 26.1495L7.13252 36L4.86902 45.8505L12.4875 52.488L16.4475 61.785L26.514 62.676L35.181 67.8735L43.848 62.676L53.9145 61.785L57.8745 52.488L65.4975 45.8505L63.225 36L65.493 26.1495L57.87 19.512L53.91 10.215L43.848 9.32397ZM24.75 29.25C24.75 28.6532 24.9871 28.0809 25.409 27.659C25.831 27.237 26.4033 27 27 27C27.5968 27 28.1691 27.237 28.591 27.659C29.013 28.0809 29.25 28.6532 29.25 29.25C29.25 29.8467 29.013 30.419 28.591 30.841C28.1691 31.2629 27.5968 31.5 27 31.5C26.4033 31.5 25.831 31.2629 25.409 30.841C24.9871 30.419 24.75 29.8467 24.75 29.25ZM27 22.5C25.2098 22.5 23.4929 23.2111 22.227 24.477C20.9612 25.7429 20.25 27.4598 20.25 29.25C20.25 31.0402 20.9612 32.7571 22.227 34.0229C23.4929 35.2888 25.2098 36 27 36C28.7902 36 30.5071 35.2888 31.773 34.0229C33.0389 32.7571 33.75 31.0402 33.75 29.25C33.75 27.4598 33.0389 25.7429 31.773 24.477C30.5071 23.2111 28.7902 22.5 27 22.5ZM26.343 48.843L48.843 26.343L45.657 23.157L23.157 45.657L26.343 48.843ZM42.75 45C42.75 44.4032 42.9871 43.8309 43.409 43.409C43.831 42.987 44.4033 42.75 45 42.75C45.5968 42.75 46.1691 42.987 46.591 43.409C47.013 43.8309 47.25 44.4032 47.25 45C47.25 45.5967 47.013 46.169 46.591 46.591C46.1691 47.0129 45.5968 47.25 45 47.25C44.4033 47.25 43.831 47.0129 43.409 46.591C42.9871 46.169 42.75 45.5967 42.75 45ZM45 38.25C43.2098 38.25 41.4929 38.9611 40.2271 40.227C38.9612 41.4929 38.25 43.2098 38.25 45C38.25 46.7902 38.9612 48.5071 40.2271 49.7729C41.4929 51.0388 43.2098 51.75 45 51.75C46.7902 51.75 48.5071 51.0388 49.773 49.7729C51.0389 48.5071 51.75 46.7902 51.75 45C51.75 43.2098 51.0389 41.4929 49.773 40.227C48.5071 38.9611 46.7902 38.25 45 38.25Z" fill="white" />
+                            </svg>
+                            }
                             title="Branding & Promotion"
                             description="Grow organization branding & events"
                         />
                     </div>
                 </div>
             </div>
-
-
         </section>
-    )
-}
+    );
+};
 
 export default AffiliationsBenefit;

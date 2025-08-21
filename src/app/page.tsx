@@ -12,13 +12,13 @@ import React from 'react'
 const Homepage = () => {
   return (
     <div>
-      <Header/>
+    
       <HeroSection/>
       <AboutusSection/>
       <AffiliationsBenefit/>
       <AffiliationProcess/>
       <HomePageBanner/>
-      <DedicatedHiringSecion/>
+      {/* <DedicatedHiringSecion/> */}
       <HomeFaq/>
       
     </div>
