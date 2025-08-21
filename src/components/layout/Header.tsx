@@ -19,88 +19,67 @@ export default function Header() {
   ];
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-white shadow">
-      <div className="max-w-7xl mx-auto flex items-center justify-between lg:px-4 lg:py-6 px-4 py-4">
-        
+    <header className="header-container">
+      <div className="header-wrapper">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-         
-          <span className="font-bold text-lg">logo-ipsum</span>
+        <div className="header-logo">
+          <span>logo-ipsum</span>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 text-gray-800 font-medium">
+        <ul className="nav-links">
           {navItems.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="hover:text-red-600 transition-colors">
+              <a href={item.href} className="nav-link">
                 {item.label}
               </a>
             </li>
           ))}
         </ul>
 
-        {/* Contact Button */}
-        <div className="hidden md:block ">
-            <Link
-            href="#contact"
-            className=" text-black border px-4 py-2 rounded-lg hover:bg-gray-100 transition"
-          >
+        {/* Contact Buttons */}
+        <div className="auth-buttons">
+          <Link href="#contact" className="btn-outline">
             Register
           </Link>
-          <Link
-            href="#contact"
-            className="bg-red-600 text-white px-4 py-2 rounded-lg ml-4 hover:bg-red-700 transition"
-          >
+          <Link href="#contact" className="btn-primary">
             Login
           </Link>
         </div>
 
         {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-2xl text-gray-800"
-          onClick={toggleMenu}
-        >
+        <button className="menu-button" onClick={toggleMenu}>
           <FiMenu />
         </button>
       </div>
 
       {/* Mobile Side Menu */}
-      <div
-        className={`fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        {/* Close Button */}
-        <div className="flex justify-end p-4">
-          <button className="text-2xl text-gray-800" onClick={toggleMenu}>
+      <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
+        <div className="close-btn">
+          <button onClick={toggleMenu}>
             <FiX />
           </button>
         </div>
 
-        {/* Mobile Links */}
-        <ul className="flex flex-col gap-6 px-6 text-gray-800 font-medium">
+        <ul className="mobile-links">
           {navItems.map((item) => (
             <li key={item.href}>
-              <a
-                href={item.href}
-                className="hover:text-red-600 transition-colors"
-                onClick={toggleMenu}
-              >
+              <a href={item.href} className="nav-link" onClick={toggleMenu}>
                 {item.label}
               </a>
             </li>
           ))}
-          <li className="flex flex-col gap-4">
+          <li className="mobile-auth">
             <Link
               href="#contact"
-              className="bg-red-600 text-white px-4 py-2 rounded-lg block text-center hover:bg-red-700 transition"
+              className="mobile-btn-primary"
               onClick={toggleMenu}
             >
               Login
             </Link>
-             <Link
+            <Link
               href="#contact"
-              className="bg-red-600 text-white px-4 py-2 rounded-lg block text-center hover:bg-red-700 transition"
+              className="mobile-btn-secendary"
               onClick={toggleMenu}
             >
               Register
@@ -109,13 +88,8 @@ export default function Header() {
         </ul>
       </div>
 
-      {/* Overlay for Mobile */}
-      {isOpen && (
-        <div
-          className="fixed inset-0  bg-opacity-40 md:hidden"
-          onClick={toggleMenu}
-        />
-      )}
-    </nav>
+      {/* Overlay */}
+      {isOpen && <div className="overlay" onClick={toggleMenu} />}
+    </header>
   );
 }

@@ -1,6 +1,5 @@
 "use client";
 import { useRef } from "react";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const slides = [
   {
@@ -62,21 +61,7 @@ export default function HeroSection() {
         ))}
       </div>
 
-      {/* Left Button */}
-      <button
-        onClick={scrollLeft}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black rounded p-2"
-      >
-        <FiChevronLeft size={28} />
-      </button>
-
-      {/* Right Button */}
-      <button
-        onClick={scrollRight}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black rounded p-2"
-      >
-        <FiChevronRight size={28} />
-      </button>
+  
     </div>
   );
 }
