@@ -914,25 +914,311 @@ body {
 
 /* section header card props design start */
 
-.section-header {
+.section-header-card {
+  margin-top: 70px;
+  /* pushes content below fixed navbar */
   width: 100%;
-  background-color: red;
-  height: 10vh;
+  background-color: #181515;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
 .section-title {
   font-size: 28px;
+  color: white;
   font-weight: 700;
-
-}
-
-.section-description {
-  font-size: 16px;
-  font-weight: 400;
-  color: #ccc;
+  text-align: center;
 }
 
 /* section header card props design end */
+
+/* about us page start */
+.about-us-page-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 12px;
+}
+
+.about-us-page-section-one {
+  padding: 48px 4px;
+}
+
+.about-us-page-section-one-paragraph {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.about-us-page-section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.about-us-page-section-two-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.about-us-page-section-two-paragraph {
+  color: var(--textdark);
+  font-weight: 500;
+
+}
+
+.about-us-page-section-two-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-us-core-value-card-one {
+  display: flex;
+  flex-direction: row;
+  max-width: 1024px;
+  margin: auto;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 11px 48.4px 3px rgba(144, 144, 144, 0.25);
+  border-radius: 12px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  position: relative;
+  z-index: 20;
+  margin-top: -100px; 
+}
+
+.core-value-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.core-value-text h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.core-value-text p {
+  font-size: 16px;
+  word-break: 12px;
+  white-space: pre-line;
+}
+
+.about-us-page-banner-container{
+  padding-top: 96px;
+}
+
+
+
+.about-us-banner-wrapper {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  justify-content: center;
+  color: white;
+  background-image: url('/images/karateConnect.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.about-us-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right,
+      rgba(127, 29, 29, 0.8),
+      rgba(153, 27, 27, 0.7),
+      rgba(0, 0, 0, 0.7)
+    );
+}
+
+.about-us-banner-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us-banner-title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* about us page designation card start */
+
+.designation-card {
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.designation-card:hover {
+  transform: translateY(-5px);
+}
+
+.designation-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.designation-card-content {
+  padding: 20px;
+}
+
+.designation-card-content h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.designation-card-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* about us designation card end */
+
+
+/* about us designation list section start */
+.about-us-page-designation-card-container{
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.about-us-leadership{
+  color: var(--textdark);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.about-us-page-designation-card-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 64px;
+}
+/* about us designation list section end */
+
+/* about us page feature card  start */
+.feature-card {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 320px;
+  margin: auto;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #f4f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.feature-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.feature-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.feature-description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-card {
+    max-width: 90%;
+    padding: 20px 15px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+  }
+
+  .feature-description {
+    font-size: 14px;
+  }
+}
+
+/* about us page feature card end */
+
+
+/* about us page feature section start */
+.about-us-feature-section{
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-us-feature-section-title{
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  
+}
+
+.about-us-feature-section-description{
+   text-align: center;
+}
+
+.about-us-feature-card-list{
+   display: flex;
+   flex-direction: row;
+   padding-top: 64px;
+   justify-content: space-around;
+}
+
+/* about us page feature section end */
