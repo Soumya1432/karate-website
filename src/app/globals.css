@@ -1672,5 +1672,127 @@ body {
 .gallery-item img:hover {
   transform: scale(1.08);
 }
-
 /* gallery page end */
+
+/* affiliations page start */
+
+.affiliation-page-benefits-container{
+  max-width: 1280px;
+  margin: auto;
+  padding: 48px 12px;
+}
+.affiliation-page-title{
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--textdark);
+  text-align: center;
+
+}
+
+.affiliation-page-benefits-wrapper{
+   display: flex;
+   flex-direction: row;
+   padding: 48px 4px;
+   gap: 20px;
+   align-items: center;
+   justify-content:space-between;
+}
+.affiliation-page-benefits-left{
+padding: 1px;
+}
+
+.affiliation-page-benefits-left ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+.affiliation-page-benefits-left li{
+  font-size: 18px;
+  color: var(--textdark);
+  font-weight: 500;
+}
+.affiliation-page-benefits-right{
+ padding: 1px;
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+}
+
+.affiliation-process-list{
+  max-width: 1280px;
+  margin: auto;
+  padding: 48px 12px;
+}
+/* affiliations page end */
+
+
+/* eligibility card start */
+.eligibility-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  max-width: 320px;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.eligibility-card-container:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.eligibility-card-icon {
+  color: #000;
+}
+
+.eligibility-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #111827;
+}
+
+.eligibility-card-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eligibility-card-container {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .eligibility-card-title {
+    font-size: 18px;
+  }
+
+  .eligibility-card-description {
+    font-size: 13px;
+  }
+}
+
+/* eligibility card end */
+
+/* affiliation eligibility section start */
+
+.affiliation-page-eligibility-section{
+  max-width: 1280px;
+  margin: auto;
+  padding: 48px 2px;
+}
+.affiliation-page-eligibility-card-list{
+  background-color: red;
+}
+/* affiliation eligiblity section end */

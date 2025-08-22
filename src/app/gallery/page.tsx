@@ -31,7 +31,7 @@ const Gallery: React.FC = () => {
          title="Our Gallery" 
          />
     <div className="gallery-container">
-      <h2 className="gallery-title">Image Gallery</h2>
+    
       <div className="gallery-grid">
         {images.map((img) => (
           <div className="gallery-item" key={img.id}>
