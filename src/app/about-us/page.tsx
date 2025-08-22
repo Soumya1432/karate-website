@@ -125,7 +125,7 @@ const AboutusPage = () => {
 
                         <FeatureCard
                             icon="/images/nationwideAffiliate.png"
-                            title="Proven Success"
+                            title="Proven Successful "
                             description="Over 1000+ students trained and awarded at national & international levels."
                         />
 

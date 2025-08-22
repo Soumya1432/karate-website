@@ -956,6 +956,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
   gap: 48px;
 }
 
@@ -1013,7 +1015,8 @@ body {
 }
 
 .about-us-page-banner-container{
-  padding-top: 96px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 
@@ -1057,7 +1060,7 @@ body {
 }
 
 .about-us-banner-title {
-  font-size: 1.875rem;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -1111,7 +1114,7 @@ body {
 }
 .about-us-leadership{
   color: var(--textdark);
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
   text-align: center;
 }
@@ -1165,11 +1168,13 @@ body {
   font-weight: 600;
   margin-bottom: 10px;
   color: #111;
+  text-align: center;
 }
 
 .feature-description {
   font-size: 15px;
   color: #555;
+  text-align: center;
   line-height: 1.5;
   max-width: 260px;
   margin: 0 auto;
@@ -1222,3 +1227,154 @@ body {
 }
 
 /* about us page feature section end */
+
+
+/* program card start */
+.program-card {
+  max-width: 500px;
+  margin: auto;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.program-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.program-icon-box {
+  width: 50px;
+  height: 50px;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.program-icon-box img {
+  width: 28px;
+  height: 28px;
+}
+
+.program-card-title{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.program-card-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.program-card-benefits {
+  font-size: 14px;
+  color: #666;
+}
+
+.program-card-footer {
+  margin-top: 16px;
+}
+
+.program-card-custom-btn{
+  background-color: var(--primary);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .program-card {
+    padding: 16px;
+  }
+  .program-card-header h2 {
+    font-size: 18px;
+  }
+}
+
+/* program card end */
+
+
+/* program page start */
+.program-page-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: auto;
+  gap: 24px;
+  padding-top: 96px;
+  padding: 96px;
+}
+
+/* program page end */
+
+/* program page banner section start */
+
+.program-page-banner-btn{
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 1.7rem;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.programpage-banner-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: url('/images/programpagebanner.jpg');
+  /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+/*  program page banner section end*/
+
+
+
+/* contact us page start */
+.contact-us-page-container{
+  max-width: 1280px;
+  margin: auto;
+  padding: 12px;
+}
+.contact-us-page-header-section{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us-page-header-section-title{
+  text-align: center;
+  font-size: 32px;
+  color: var(--textdark);
+  font-weight: 600;
+}
+
+.contact-us-page-header-section-description{
+  text-align: center;
+  font-size: 18px;
+}
+
+
+/* contact us page end */
