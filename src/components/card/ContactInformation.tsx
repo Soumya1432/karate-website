@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 
+
 const ContactInformation = () => {
   return (
   <div className="contact-information-card-container">
@@ -9,8 +10,8 @@ const ContactInformation = () => {
         <span className="contact-icon">📍</span>
         <div>
           <h4 className="contact-information-card-title">Head Office Address</h4>
-          <p>1234 Karate Street,</p>
-          <p>Shyamnagar, West Beggl, India</p>
+          <p className='contact-information-card-details'>1234 Karate Street,</p>
+          <p className='contact-information-card-details'>Shyamnagar, West Bengal, India</p>
         </div>
       </div>
 
@@ -19,7 +20,7 @@ const ContactInformation = () => {
         <span className="contact-icon">📞</span>
         <div>
           <h4 className="contact-information-card-title">Phone / WhatsApp</h4>
-          <p>+91-XXXXXXXXXX</p>
+          <p className='contact-information-card-details'>+91-XXXXXXXXXX</p>
         </div>
       </div>
 
@@ -28,7 +29,7 @@ const ContactInformation = () => {
         <span className="contact-icon">✉️</span>
         <div>
           <h4 className="contact-information-card-title">Email</h4>
-          <p>info@organization.com</p>
+          <p className='contact-information-card-details'>info@organization.com</p>
         </div>
       </div>
 
@@ -37,7 +38,7 @@ const ContactInformation = () => {
         <span className="contact-icon">⏰</span>
         <div>
           <h4 className="contact-information-card-title">Office Hours</h4>
-          <p>Mon - Sat. 10:00 AM - 6:00 PM</p>
+          <p className='contact-information-card-details'>Mon - Sat. 10:00 AM - 6:00 PM</p>
         </div>
       </div>
 
@@ -47,6 +48,8 @@ const ContactInformation = () => {
           src="/map-placeholder.png"
           alt="map"
           className="map-image"
+          width={500}
+          height={500}
         />
       </div>
     </div>

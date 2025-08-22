@@ -12,7 +12,7 @@ export default function Header() {
     { label: "Home", href: "/" },
     { label: "About us", href: "about-us" },
     { label: "Affiliations", href: "#affiliations" },
-    { label: "Events & Tournaments", href: "#events" },
+    { label: "Events & Championship", href: "events-championships" },
     { label: "Programs", href: "/programs" },
     { label: "Gallery", href: "/gallery" },
     { label: "Contact us", href: "/contact-us" },
