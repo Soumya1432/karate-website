@@ -3,7 +3,7 @@
     "id": 1,
     "slug": "champions-success",
     "title": "Our Champions’ Success",
-    "image": "/images/testimonial1.jpg",
+    "image": "/images/testimonial01.png",
     "description": "Our guidance and support, access to professional resources, and a platform to showcase their talent.",
     "details": "Thanks to AISKA, our students gained opportunities to compete at national championships and win multiple medals. The support system, structured training, and resources were beyond expectations."
   },
@@ -11,7 +11,39 @@
     "id": 2,
     "slug": "karate-journey",
     "title": "A Life-Changing Karate Journey",
-    "image": "/images/testimonial2.jpg",
+    "image": "/images/testimonial02.png",
+    "description": "Karate training changed my life, bringing discipline and confidence.",
+    "details": "With AISKA’s help, I became a certified instructor and represented my dojo in international championships."
+  },
+   {
+    "id": 3,
+    "slug": "a-zero-to-national-journey",
+    "title": "A Zero to National level Journey",
+    "image": "/images/testimonial03.png",
+    "description": "Karate training changed my life, bringing discipline and confidence.",
+    "details": "With AISKA’s help, I became a certified instructor and represented my dojo in international championships."
+  },
+    {
+    "id": 4,
+    "slug": "champions-success-full",
+    "title": "Our Champions’ Success full",
+    "image": "/images/testimonial01.png",
+    "description": "Our guidance and support, access to professional resources, and a platform to showcase their talent.",
+    "details": "Thanks to AISKA, our students gained opportunities to compete at national championships and win multiple medals. The support system, structured training, and resources were beyond expectations."
+  },
+  {
+    "id": 5,
+    "slug": "karate-journey-life",
+    "title": "A Life-Changing Karate Journey of life",
+    "image": "/images/testimonial02.png",
+    "description": "Karate training changed my life, bringing discipline and confidence.",
+    "details": "With AISKA’s help, I became a certified instructor and represented my dojo in international championships."
+  },
+   {
+    "id": 6,
+    "slug": "a-zero-to-national-journey-award",
+    "title": "A Zero to National level Journey Award",
+    "image": "/images/testimonial03.png",
     "description": "Karate training changed my life, bringing discipline and confidence.",
     "details": "With AISKA’s help, I became a certified instructor and represented my dojo in international championships."
   }

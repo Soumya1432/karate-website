@@ -1802,6 +1802,13 @@ padding: 1px;
 
 
 /* testimonials page & testimonals details start */
+.testimonials-page-container{
+  margin: auto;
+  max-width: 1280px;
+  padding: 48px 12px;
+}
+
+
 .testimonial-card-container {
   display: flex;
   flex-direction: column;
@@ -1821,12 +1828,12 @@ padding: 1px;
 
 .testimonial-card-image img {
   width: 100%;
-  height: 220px;
+  height: 280px;
   object-fit: cover;
 }
 
 .testimonial-card-content {
-  padding: 16px;
+  padding: 32px;
 }
 
 .testimonial-card-title {
@@ -1844,7 +1851,7 @@ padding: 1px;
 /* Grid layout */
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
   margin-top: 24px;
 }
