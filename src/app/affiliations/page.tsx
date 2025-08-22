@@ -5,6 +5,9 @@ import Image from 'next/image'
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs';
 import { FaHome } from 'react-icons/fa';
+import { PiStudentFill } from "react-icons/pi";
+import { TbNotes } from "react-icons/tb";
+import { PiCertificateBold } from "react-icons/pi";
 
 const AffiliationsPage = () => {
     const steps = [
@@ -75,6 +78,37 @@ const AffiliationsPage = () => {
 
             </div>
 
+    {/* eligibility & requirements */}
+            <div className='affiliation-page-eligibility-section'>
+                <h2 className='affiliation-page-title'>Eligibility & Requirements</h2>
+
+                <div className='affiliation-page-eligibility-card-list'>
+                    <EligibilityCard
+                        icon={<FaHome size={32} />}
+                        title="Active dojo"
+                        description="Must have a physical or functional karate academy"
+                    />
+                    <EligibilityCard
+                        icon={<PiStudentFill size={32} />}
+                        title="Student Base"
+                        description="Recomended : Minimum 5 active students"
+                    />
+                    <EligibilityCard
+                        icon={<TbNotes size={32} />}
+                        title="Follow Standards"
+                        description="Commitment to syllabus , belt exams, grading policies"
+                    />
+                    <EligibilityCard
+                        icon={<PiCertificateBold size={32} />}
+                        title="Certified Instructor"
+                        description="At least one black belt instructor required"
+                    />
+                </div>
+
+            </div>
+
+
+            {/* how to apply section */}
             <div className=''>
                 <h2 className='affiliation-page-title'>How to apply </h2>
 
@@ -104,18 +138,7 @@ const AffiliationsPage = () => {
 
             </div>
 
-            <div className='affiliation-page-eligibility-section'>
-                <h2 className='affiliation-page-title'>Eligibility & Requirements</h2>
-
-                <div className='affiliation-page-eligibility-card-list'>
-                    <EligibilityCard
-                        icon={<FaHome size={32} />}
-                        title="Active dojo"
-                        description="Must have a physical or functional karate academy"
-                    />
-                </div>
-
-            </div>
+        
 
         </section>
     )

@@ -14,6 +14,7 @@ export default function Header() {
     { label: "Affiliations", href: "/affiliations" },
     { label: "Events & Championship", href: "events-championships" },
     { label: "Programs", href: "/programs" },
+    { label: "Testimonials", href: "/testimonials" },
     { label: "Gallery", href: "/gallery" },
     { label: "Contact us", href: "/contact-us" },
   ];
