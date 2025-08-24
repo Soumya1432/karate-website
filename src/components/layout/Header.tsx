@@ -31,9 +31,9 @@ export default function Header() {
         <ul className="nav-links">
           {navItems.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="nav-link">
+              <Link href={item.href} className="nav-link">
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -62,31 +62,32 @@ export default function Header() {
           </button>
         </div>
 
-        <ul className="mobile-links">
-          {navItems.map((item) => (
-            <li key={item.href}>
-              <a href={item.href} className="nav-link" onClick={toggleMenu}>
-                {item.label}
-              </a>
-            </li>
-          ))}
-          <li className="mobile-auth">
-            <Link
-              href="#contact"
-              className="mobile-btn-primary"
-              onClick={toggleMenu}
-            >
-              Login
-            </Link>
-            <Link
-              href="#contact"
-              className="mobile-btn-secendary"
-              onClick={toggleMenu}
-            >
-              Register
-            </Link>
-          </li>
-        </ul>
+       <ul className="mobile-links">
+  {navItems.map((item) => (
+    <li key={item.href}>
+      <Link href={item.href} className="nav-link" onClick={toggleMenu}>
+        {item.label}
+      </Link>
+    </li>
+  ))}
+  <li className="mobile-auth">
+    <Link
+      href="/login"
+      className="mobile-btn-primary"
+      onClick={toggleMenu}
+    >
+      Login
+    </Link>
+    <Link
+      href="/register"
+      className="mobile-btn-secendary"
+      onClick={toggleMenu}
+    >
+      Register
+    </Link>
+  </li>
+</ul>
+
       </div>
 
       {/* Overlay */}

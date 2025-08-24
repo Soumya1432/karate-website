@@ -15,8 +15,8 @@ const ContactusPage = () => {
         </div>
 
         <div className='contact-us-page-details-list'>
-          <ContactInformation/>
-          <ContacUsForm/>
+          <ContactInformation />
+          <ContacUsForm />
         </div>
 
       </div>

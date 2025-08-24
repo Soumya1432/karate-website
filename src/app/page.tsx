@@ -19,7 +19,7 @@ const Homepage = () => {
       <AffiliationsBenefit/>
       <AffiliationProcess/>
       <HomePageBanner/>
-      {/* <DedicatedHiringSecion/> */}
+      <DedicatedHiringSecion/>
       <HomeFaq/>
       <TestimonialSection/>
     </div>
