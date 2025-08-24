@@ -151,14 +151,16 @@ body {
 
 .mobile-auth {
   display: flex;
-  flex-direction: column; /* stack vertically */
+  flex-direction: column;
+  /* stack vertically */
   gap: 1rem;
 }
 
 .mobile-btn-primary,
 .mobile-btn-secendary {
   display: block;
-  width: 100%; /* full width */
+  width: 100%;
+  /* full width */
   text-align: center;
   padding: 12px 24px;
   border-radius: 8px;
@@ -179,7 +181,8 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.4); /* visible dim background */
+  background: rgba(0, 0, 0, 0.4);
+  /* visible dim background */
   z-index: 40;
 }
 
@@ -373,7 +376,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  
+
 }
 
 .faq-header-title {
@@ -901,7 +904,7 @@ body {
   /* pushes content below fixed navbar */
   width: 100%;
   background-color: #181515;
-  padding: 40px 20px;
+  padding: 36px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -909,9 +912,14 @@ body {
 }
 
 .section-title {
-  font-size: 28px;
+  font-size: 24px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -1293,7 +1301,7 @@ body {
 
 
 /* program page start */
-.program-page-container {
+/* .program-page-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1302,7 +1310,19 @@ body {
   gap: 24px;
   padding-top: 96px;
   padding: 96px;
+} */
+.program-page-container {
+    display: grid;
+    gap: 24px;
+    padding: 48px 18px;
+    margin: auto;
+
+    max-width: 1280px;
+    grid-template-columns: 1fr;
 }
+
+
+
 
 /* program page end */
 
@@ -1362,7 +1382,7 @@ body {
   font-size: 18px;
 }
 
-.contact-us-page-details-list{
+.contact-us-page-details-list {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -1385,8 +1405,9 @@ body {
 
 .contact-information-card-item {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: 48px;
+  justify-content: start;
 }
 
 .contact-icon {
@@ -1422,85 +1443,85 @@ body {
 
 /* contact us form start */
 
- .contact-us-card {
-     display: flex;
-     width: 100%;
-     padding: 24px;
- }
+.contact-us-card {
+  display: flex;
+  width: 100%;
+  padding: 24px;
+}
 
- .contact-form {
-     background: #fff;
-     padding: 2rem;
-     border-radius: 12px;
-     width: 100%;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
- }
+.contact-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
- .contact-form h2 {
-     margin-bottom: 1.5rem;
-     font-size: 1.2rem;
- }
+.contact-form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
 
- .contact-form input,
- .contact-form textarea {
-     width: 100%;
-     padding: 0.75rem;
-     margin-bottom: 1rem;
-     border: 1px solid #ddd;
-     border-radius: 8px;
-     font-size: 1rem;
- }
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
 
- .contact-us-form-terms {
-     display: flex;
-     justify-content: start;
-     border: 3px solid red;
-     align-items: center;
- }
+.contact-us-form-terms {
+  display: flex;
+  justify-content: start;
+  border: 3px solid red;
+  align-items: center;
+}
 
- .contact-us-form-checkbox {
-     height: 12px;
-     width: 12px;
- }
+.contact-us-form-checkbox {
+  height: 12px;
+  width: 12px;
+}
 
- .contact-us-form-terms-label {
-     border: 2px solid green;
-     color: red;
- }
+.contact-us-form-terms-label {
+  border: 2px solid green;
+  color: red;
+}
 
- .input-row {
-     display: flex;
-     gap: 1rem;
- }
+.input-row {
+  display: flex;
+  gap: 1rem;
+}
 
- .input-row input {
-     flex: 1;
- }
+.input-row input {
+  flex: 1;
+}
 
- .terms {
-     display: flex;
-     align-items: center;
-     gap: 0.5rem;
-     margin-bottom: 1.5rem;
-     font-size: 0.9rem;
- }
+.terms {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
 
- /* Button */
- .contact-form button {
-     width: 100%;
-     padding: 0.75rem;
-     background: var(--primary);
-     border: none;
-     border-radius: 8px;
-     color: #fff;
-     font-size: 1rem;
-     cursor: pointer;
-     transition: 0.3s ease;
- }
+/* Button */
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
 
- .contact-form button:hover {
-     background: #590505;
- }
+.contact-form button:hover {
+  background: #590505;
+}
 
 
 /* contact us form end */
@@ -1513,7 +1534,7 @@ body {
   padding: 24px;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
 
 }
 
@@ -1601,7 +1622,8 @@ body {
   left: 0;
   height: 2px;
   width: 100%;
-  background: #c62828; /* red underline */
+  background: #c62828;
+  /* red underline */
 }
 
 .events-page-container {
@@ -1618,9 +1640,9 @@ body {
 
 /* gallery page start */
 .gallery-container {
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 48px 10px;
   font-family: Arial, sans-serif;
 }
 
@@ -1654,16 +1676,18 @@ body {
 .gallery-item img:hover {
   transform: scale(1.08);
 }
+
 /* gallery page end */
 
 /* affiliations page start */
 
-.affiliation-page-benefits-container{
+.affiliation-page-benefits-container {
   max-width: 1280px;
   margin: auto;
   padding: 48px 12px;
 }
-.affiliation-page-title{
+
+.affiliation-page-title {
   font-size: 32px;
   font-weight: 600;
   color: var(--textdark);
@@ -1671,42 +1695,45 @@ body {
 
 }
 
-.affiliation-page-benefits-wrapper{
-   display: flex;
-   flex-direction: row;
-   padding: 48px 4px;
-   gap: 20px;
-   align-items: center;
-   justify-content:space-between;
-}
-.affiliation-page-benefits-left{
-padding: 1px;
+.affiliation-page-benefits-wrapper {
+  display: flex;
+  flex-direction: row;
+  padding: 48px 4px;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.affiliation-page-benefits-left ul{
+.affiliation-page-benefits-left {
+  padding: 1px;
+}
+
+.affiliation-page-benefits-left ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   gap: 24px;
 }
 
-.affiliation-page-benefits-left li{
+.affiliation-page-benefits-left li {
   font-size: 18px;
   color: var(--textdark);
   font-weight: 500;
 }
-.affiliation-page-benefits-right{
- padding: 1px;
- display: flex;
- flex-direction: row;
- gap: 10px;
+
+.affiliation-page-benefits-right {
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.affiliation-process-list{
+.affiliation-process-list {
   max-width: 1280px;
   margin: auto;
   padding: 48px 12px;
 }
+
 /* affiliations page end */
 
 
@@ -1723,11 +1750,11 @@ padding: 1px;
   background: #fff;
   max-width: 300px;
   transition: all 0.3s ease;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .eligibility-card-container:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 .eligibility-card-icon {
@@ -1769,22 +1796,24 @@ padding: 1px;
 
 /* affiliation eligibility section start */
 
-.affiliation-page-eligibility-section{
+.affiliation-page-eligibility-section {
   max-width: 1280px;
   margin: auto;
   padding: 48px 2px;
 }
-.affiliation-page-eligibility-card-list{
-   display: flex;
-   justify-content: center;
-   padding: 64px 2px;
-   gap: 18px;
+
+.affiliation-page-eligibility-card-list {
+  display: flex;
+  justify-content: center;
+  padding: 64px 2px;
+  gap: 18px;
 }
+
 /* affiliation eligiblity section end */
 
 
 /* testimonials page & testimonals details start */
-.testimonials-page-container{
+.testimonials-page-container {
   margin: auto;
   max-width: 1280px;
   padding: 48px 12px;
@@ -1805,7 +1834,7 @@ padding: 1px;
 
 .testimonial-card-container:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-card-image img {
